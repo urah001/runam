@@ -48,7 +48,7 @@ export default function Header() {
         </Sheet>
         <Link href="/" className="ml-4 md:ml-0 flex items-center gap-2">
           <ShoppingCart className="h-6 w-6" />
-          <span className="font-bold text-xl">UniVendor</span>
+          <span className="font-bold text-xl">FarmerHome</span>
         </Link>
         <nav className="mx-6 hidden md:flex items-center gap-6 text-sm">
           {routes.map((route) => (

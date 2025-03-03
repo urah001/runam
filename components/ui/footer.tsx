@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container px-4 md:px-6 py-8 md:py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-lg font-semibold mb-4">UniVendor</h3>
+            <h3 className="text-lg font-semibold mb-4">FarmerHome</h3>
             <p className="text-sm text-muted-foreground">
               Your one-stop shop for quality products at affordable prices.
             </p>
@@ -108,7 +108,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} UniVendor. All rights reserved.</p>
+          <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} FarmerHome. All rights reserved.</p>
           <div className="flex gap-4 mt-4 md:mt-0">
             <Link href="/privacy" className="text-sm text-muted-foreground hover:text-primary">
               Privacy Policy
