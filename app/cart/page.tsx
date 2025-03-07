@@ -3,7 +3,8 @@
 import Link from "next/link"
 import { Minus, Plus, Trash2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { useCart } from "@/components/cart-provider"
+import { useCart } from "@/components/ui/cart-provider"
+import Image from "next/image"
 
 export default function CartPage() {
   const { items, removeItem, updateQuantity, totalPrice } = useCart()
@@ -50,7 +51,7 @@ export default function CartPage() {
                         <td className="p-4">
                           <div className="flex items-center gap-4">
                             <div className="w-16 h-16 rounded overflow-hidden flex-shrink-0">
-                              <img
+                              <Image
                                 src={item.image || "/placeholder.svg"}
                                 alt={item.name}
                                 className="w-full h-full object-cover"

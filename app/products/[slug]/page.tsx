@@ -1,10 +1,11 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Link from "next/link"
-import { ChevronLeft, Minus, Plus, ShoppingCart } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { useCart } from "@/components/cart-provider"
+import { useState } from "react";
+import Link from "next/link";
+import { ChevronLeft, Minus, Plus, ShoppingCart } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { useCart } from "@/components/ui/cart-provider";
+import Image from "next/image";
 
 // Mock data for products - in a real app, this would come from a database
 const allProducts = [
@@ -47,42 +48,44 @@ const allProducts = [
     ],
   },
   // More products would be here in a real app
-]
+];
 
 export default function ProductPage({ params }: { params: { slug: string } }) {
-  const [quantity, setQuantity] = useState(1)
-  const { addItem } = useCart()
+  const [quantity, setQuantity] = useState(1);
+  const { addItem } = useCart();
 
-  const product = allProducts.find((p) => p.slug === params.slug)
+  const product = allProducts.find((p) => p.slug === params.slug);
 
   if (!product) {
     return (
       <div className="container px-4 md:px-6 py-8 text-center">
         <h1 className="text-3xl font-bold mb-4">Product Not Found</h1>
-        <p className="mb-6">Sorry, the product youre looking for doesnt exist.</p>
+        <p className="mb-6">
+          Sorry, the product youre looking for doesnt exist.
+        </p>
         <Button asChild>
           <Link href="/products">Back to Products</Link>
         </Button>
       </div>
-    )
+    );
   }
 
   const decreaseQuantity = () => {
     if (quantity > 1) {
-      setQuantity(quantity - 1)
+      setQuantity(quantity - 1);
     }
-  }
+  };
 
   const increaseQuantity = () => {
-    setQuantity(quantity + 1)
-  }
+    setQuantity(quantity + 1);
+  };
 
   const handleAddToCart = () => {
     addItem({
       ...product,
       quantity,
-    })
-  }
+    });
+  };
 
   return (
     <main className="flex-1">
@@ -96,13 +99,19 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
 
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
           <div className="rounded-lg overflow-hidden border">
-            <img src={product.image || "/placeholder.svg"} alt={product.name} className="w-full h-auto object-cover" />
+            <Image
+              src={product.image || "/placeholder.svg"}
+              alt={product.name}
+              className="w-full h-auto object-cover"
+            />
           </div>
 
           <div className="space-y-6">
             <div>
               <h1 className="text-3xl font-bold">{product.name}</h1>
-              <p className="text-2xl font-bold mt-2">${product.price.toFixed(2)}</p>
+              <p className="text-2xl font-bold mt-2">
+                ${product.price.toFixed(2)}
+              </p>
             </div>
 
             <div className="prose max-w-none">
@@ -122,11 +131,20 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
               <div className="flex items-center gap-4 mb-4">
                 <span className="font-medium">Quantity:</span>
                 <div className="flex items-center">
-                  <Button variant="outline" size="icon" onClick={decreaseQuantity} disabled={quantity <= 1}>
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    onClick={decreaseQuantity}
+                    disabled={quantity <= 1}
+                  >
                     <Minus className="h-4 w-4" />
                   </Button>
                   <span className="w-12 text-center">{quantity}</span>
-                  <Button variant="outline" size="icon" onClick={increaseQuantity}>
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    onClick={increaseQuantity}
+                  >
                     <Plus className="h-4 w-4" />
                   </Button>
                 </div>
@@ -146,6 +164,5 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
         </div>
       </div>
     </main>
-  )
+  );
 }
-
