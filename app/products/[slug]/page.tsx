@@ -55,7 +55,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
   const { addItem } = useCart();
 
   const product = allProducts.find((p) => p.slug === params.slug);
-
+  
   if (!product) {
     return (
       <div className="container px-4 md:px-6 py-8 text-center">

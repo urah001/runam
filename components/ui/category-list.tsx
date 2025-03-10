@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
+import Image from "next/image"
 
 // Mock data for categories
 const categories = [
@@ -19,7 +20,7 @@ export function CategoryList() {
             <Card className="overflow-hidden transition-all hover:shadow-lg">
               <CardContent className="p-0">
                 <div className="relative aspect-square">
-                  <img
+                  <Image
                     src={category.image || "/placeholder.svg"}
                     alt={category.name}
                     className="object-cover w-full h-full"
