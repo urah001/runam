@@ -6,6 +6,7 @@ import { useCart } from "./cart-provider";
 import Image from "next/image";
 
 // Mock data for products
+//might later use mock data incase of future error 
 const allProducts = [
   {
     id: 1,
