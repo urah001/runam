@@ -1,26 +1,26 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
-import { Menu, Search, ShoppingCart, User, X } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { useCart } from "./cart-provider"
+import { useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Menu, Search, Settings, ShoppingCart, User, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { useCart } from "./cart-provider";
 
 export default function Header() {
-  const [isSearchOpen, setIsSearchOpen] = useState(false)
-  const pathname = usePathname()
-  const { items } = useCart()
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const pathname = usePathname();
+  const { items } = useCart();
 
   const routes = [
     { href: "/", label: "Home" },
-    { href: "/products", label: "Products" },
-    { href: "/categories", label: "Categories" },
+    { href: "/products", label: "Find Services" },
+    { href: "/categories", label: "Service Categories" },
     { href: "/about", label: "About" },
     { href: "/contact", label: "Contact" },
-  ]
+  ];
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background">
@@ -47,8 +47,8 @@ export default function Header() {
           </SheetContent>
         </Sheet>
         <Link href="/" className="ml-4 md:ml-0 flex items-center gap-2">
-          <ShoppingCart className="h-6 w-6" />
-          <span className="font-bold text-xl">FarmerHome</span>
+          <Settings className="h-6 w-6" />
+          <span className="font-bold text-xl">RunAM</span>
         </Link>
         <nav className="mx-6 hidden md:flex items-center gap-6 text-sm">
           {routes.map((route) => (
@@ -56,7 +56,9 @@ export default function Header() {
               key={route.href}
               href={route.href}
               className={`transition-colors hover:text-primary ${
-                pathname === route.href ? "text-primary font-medium" : "text-muted-foreground"
+                pathname === route.href
+                  ? "text-primary font-medium"
+                  : "text-muted-foreground"
               }`}
             >
               {route.label}
@@ -66,14 +68,28 @@ export default function Header() {
         <div className="ml-auto flex items-center gap-2">
           {isSearchOpen ? (
             <div className="relative flex items-center">
-              <Input type="search" placeholder="Search products..." className="w-[200px] md:w-[300px]" autoFocus />
-              <Button variant="ghost" size="icon" className="absolute right-0" onClick={() => setIsSearchOpen(false)}>
+              <Input
+                type="search"
+                placeholder="Search products..."
+                className="w-[200px] md:w-[300px]"
+                autoFocus
+              />
+              <Button
+                variant="ghost"
+                size="icon"
+                className="absolute right-0"
+                onClick={() => setIsSearchOpen(false)}
+              >
                 <X className="h-4 w-4" />
                 <span className="sr-only">Close search</span>
               </Button>
             </div>
           ) : (
-            <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(true)}>
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setIsSearchOpen(true)}
+            >
               <Search className="h-5 w-5" />
               <span className="sr-only">Search</span>
             </Button>
@@ -98,6 +114,5 @@ export default function Header() {
         </div>
       </div>
     </header>
-  )
+  );
 }
-

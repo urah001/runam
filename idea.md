@@ -145,3 +145,11 @@ Bonus: Automate with GitHub Actions
     Use GitHub Actions to notify you on Discord/Slack whenever a PR is created.
 
 Would you like help setting up GitHub Actions or webhooks for notifications? 🚀
+
+
+1️⃣ Home → (Keep this as the landing page) : Home
+2️⃣ Find Services → (For service seekers to browse & hire professionals) : Products
+3️⃣ Offer Services → (For professionals to list their skills/services)
+4️⃣ Categories → (Organized service listings based on type: Tech, Home, Business, etc.) : categories
+5️⃣ How It Works → (Explains the process for both clients & service providers)
+6️⃣ Support → (FAQs, Help Center, or Contact options for assistance)x
