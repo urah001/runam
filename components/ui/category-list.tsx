@@ -26,19 +26,19 @@ const categories = [
     id: 4,
     name: "Transport & Logistics",
     image: "/transportServ.svg?height=200&width=200",
-    slug: "beauty",
+    slug: "logistics-transport",
   },
   {
     id: 5,
     name: "Digital & Tech ",
-    image: "/placeholder.svg?height=200&width=200",
-    slug: "beauty",
+    image: "/techServ.svg?height=200&width=200",
+    slug: "digital-tect",
   },
   {
     id: 6,
-    name: "Health & Wellness ",
-    image: "/placeholder.svg?height=200&width=200",
-    slug: "beauty",
+    name: "Education & Training ",
+    image: "/eductionServ.svg?height=200&width=200",
+    slug: "training-ed",
   },
 ];
 
