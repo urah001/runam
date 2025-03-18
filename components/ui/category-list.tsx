@@ -6,25 +6,37 @@ import Image from "next/image";
 const categories = [
   {
     id: 1,
-    name: "Electronics",
+    name: "Home & Domestics",
     image: "/placeholder.svg?height=200&width=200",
     slug: "electronics",
   },
   {
     id: 2,
-    name: "Clothing",
+    name: "Beauty & Personal care",
     image: "/placeholder.svg?height=200&width=200",
     slug: "clothing",
   },
   {
     id: 3,
-    name: "Home & Kitchen",
+    name: "Event & Entertainment",
     image: "/placeholder.svg?height=200&width=200",
     slug: "home-kitchen",
   },
   {
     id: 4,
-    name: "Beauty",
+    name: "Transport & Logistics",
+    image: "/placeholder.svg?height=200&width=200",
+    slug: "beauty",
+  },
+  {
+    id: 5,
+    name: "Digital & Tech ",
+    image: "/placeholder.svg?height=200&width=200",
+    slug: "beauty",
+  },
+  {
+    id: 6,
+    name: "Health & Wellness ",
     image: "/placeholder.svg?height=200&width=200",
     slug: "beauty",
   },
