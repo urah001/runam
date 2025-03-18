@@ -10,57 +10,87 @@ dark    |  little dark |    bright   | little bright
 
 # to do 
 remove category to remain only available product 
+leave category
 
-1. Grains & Cereals 🌾
-    Rice
-    Wheat
-    Maize (Corn)
-    Barley
-    Millet
-    Sorghum
+1. ### **Service Rendering Jobs in Nigeria 🇳🇬**  
+ **1. Home & Domestic Services 🏡**  
+   - House Cleaning  
+   - Laundry & Dry Cleaning  
+   - Plumbing Services  
+   - Electrical Repairs  
+   - Painting Services  
+   - Carpentry & Furniture Repairs  
+   - Pest Control  
 
-2. Vegetables 🥦🥕
-    Tomatoes
-    Onions
-    Carrots
-    Spinach
-    Cabbage
-    Lettuce
-    Bell Peppers
-    Cucumbers
-    Eggplants
+#### **2. Beauty & Personal Care 💇‍♂️💅**  
+   - Barbing & Hairdressing  
+   - Makeup Artistry  
+   - Nail Technician (Manicure & Pedicure)  
+   - Skincare & Spa Services  
+   - Massage Therapy  
+   - Tattoo & Piercing Services  
 
-3. Fruits 🍎🍌
-    Apples
-    Oranges
-    Bananas
-    Pineapples
-    Mangoes
-    Grapes
-    Watermelon
-    Strawberries
+#### **3. Events & Entertainment 🎉🎤**  
+   - Event Planning & Decoration  
+   - Photography & Videography  
+   - DJ & Live Band Services  
+   - Catering & Small Chops  
+   - MC/Host Services  
+   - Stage & Lighting Setup  
+   - Sound System Rentals  
 
-4. Tubers & Root Crops 🍠
-    Cassava
-    Yam
-    Sweet Potatoes
-    Irish Potatoes
-    Ginger
-    Garlic
+#### **4. Transport & Logistics 🚗🚛**  
+   - Ride-Hailing (Uber, Bolt, InDriver)  
+   - Motorbike Delivery (Okada, Gokada, MaxNG)  
+   - Dispatch Rider Services  
+   - Inter-State Transportation  
+   - Car Rental Services  
+   - Moving & Relocation Services  
 
-5. Legumes & Nuts 🌰
-    Beans (Black Beans, Kidney Beans, Soybeans)
-    Peanuts
-    Cashew Nuts
-    Almonds
+#### **5. Digital & Tech Services 💻📱**  
+   - Website Development  
+   - Graphic Design & Branding  
+   - Digital Marketing & SEO  
+   - Mobile App Development  
+   - Cybersecurity & Ethical Hacking  
+   - Video Editing & Animation  
+   - Software Development  
+   - Computer & Phone Repairs  
 
-6. Herbs & Spices 🌿
-    Basil
-    Mint
-    Thyme
-    Oregano
-    Turmeric
-    Cinnamon
+#### **6. Health & Wellness 🏥💊**  
+   - Home Nursing Services  
+   - Physiotherapy  
+   - Personal Fitness Training  
+   - Herbal & Alternative Medicine  
+   - Diet & Nutrition Consulting  
+   - Midwifery & Childbirth Assistance  
+
+#### **7. Education & Training 📚🎓**  
+   - Private Tutoring  
+   - Online Coaching & Mentorship  
+   - Language Translation & Interpretation  
+   - Skill Acquisition Training (Tech, Fashion, Handwork)  
+   - Vocational Training (Mechanic, Welding, Tailoring)  
+
+#### **8. Legal & Financial Services ⚖️💰**  
+   - Legal Consultation  
+   - Tax & Accounting Services  
+   - Insurance Consulting  
+   - Loan & Microfinance Assistance  
+   - Business Registration Services  
+
+#### **9. Repairs & Maintenance 🛠️**  
+   - Generator Repairs  
+   - Air Conditioner & Fridge Repairs  
+   - Car Repairs & Auto Mechanics  
+   - Tailoring & Cloth Mending  
+   - Shoe Making & Repairs  
+
+#### **10. Security & Protection 🔒🚔**  
+   - Private Security Guards  
+   - CCTV Installation & Monitoring  
+   - Bouncers & Event Security  
+   - Locksmith Services  
 
 Where to Download Crop Images? 📸
 
