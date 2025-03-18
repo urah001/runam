@@ -14,6 +14,7 @@ leave category
 
 1. ### **Service Rendering Jobs in Nigeria 🇳🇬**  
  **1. Home & Domestic Services 🏡**  
+ : electronics
    - House Cleaning  
    - Laundry & Dry Cleaning  
    - Plumbing Services  
@@ -23,6 +24,7 @@ leave category
    - Pest Control  
 
 #### **2. Beauty & Personal Care 💇‍♂️💅**  
+: clothing
    - Barbing & Hairdressing  
    - Makeup Artistry  
    - Nail Technician (Manicure & Pedicure)  
@@ -31,6 +33,7 @@ leave category
    - Tattoo & Piercing Services  
 
 #### **3. Events & Entertainment 🎉🎤**  
+: home-kitchen
    - Event Planning & Decoration  
    - Photography & Videography  
    - DJ & Live Band Services  
@@ -40,6 +43,8 @@ leave category
    - Sound System Rentals  
 
 #### **4. Transport & Logistics 🚗🚛**  
+: beauty
+
    - Ride-Hailing (Uber, Bolt, InDriver)  
    - Motorbike Delivery (Okada, Gokada, MaxNG)  
    - Dispatch Rider Services  
@@ -48,6 +53,7 @@ leave category
    - Moving & Relocation Services  
 
 #### **5. Digital & Tech Services 💻📱**  
+: beauty
    - Website Development  
    - Graphic Design & Branding  
    - Digital Marketing & SEO  
@@ -58,6 +64,7 @@ leave category
    - Computer & Phone Repairs  
 
 #### **6. Health & Wellness 🏥💊**  
+: 
    - Home Nursing Services  
    - Physiotherapy  
    - Personal Fitness Training  
@@ -117,69 +124,7 @@ http://localhost:1337/api/[name]?populate=*
 http://localhost:1337/api/posts?populate=*
 
 
+# learning
 
-
-# working on git 
-
-Step 1: Set Up GitHub Repositories
-
-    You already have two separate repositories for frontend and backend. Ensure both are on GitHub.
-    Add your friend as a collaborator to the respective repo(s):
-        Go to the repo on GitHub.
-        Click Settings > Manage access.
-        Click Invite a collaborator and enter your friend’s GitHub username/email.
-
-Step 2: Enforce Pull Request Reviews
-
-To ensure that no code is merged without your approval:
-
-    Go to the repository settings → Branches.
-    Under Branch protection rules, click Add rule.
-    Set Branch name pattern to main or develop (or whichever branch you want to protect).
-    Enable:
-        ✅ Require a pull request before merging
-        ✅ Require approvals (set it to at least 1 review, which will be you)
-        ✅ Dismiss stale approvals when new commits are pushed (optional)
-        ✅ Include administrators (if you also want to be forced to review your own PRs)
-    Save the settings.
-
-Now, your friend cannot push directly to main—they must create a pull request (PR), which you will review and approve before merging.
-Step 3: Notification on Changes
-
-Whenever your friend pushes code and opens a Pull Request (PR):
-
-    You will receive an email notification (if enabled).
-    You can also get GitHub mobile app notifications.
-    If you use Slack, Discord, or Telegram, you can set up a GitHub webhook to notify you.
-
-Step 4: Workflow for Working Together
-
-    Your friend clones the frontend repo and creates a new feature branch:
-
-git checkout -b feature-new-ui
-
-They make changes, commit, and push the branch:
-
-    git add .
-    git commit -m "Updated homepage UI"
-    git push origin feature-new-ui
-
-    On GitHub, they open a Pull Request (PR).
-    You get notified and review the changes.
-    If everything is good, you approve and merge the PR.
-    Repeat for future updates.
-
-Bonus: Automate with GitHub Actions
-
-    You can set up a CI/CD pipeline to automatically test frontend or backend changes before merging.
-    Use GitHub Actions to notify you on Discord/Slack whenever a PR is created.
-
-Would you like help setting up GitHub Actions or webhooks for notifications? 🚀
-
-
-1️⃣ Home → (Keep this as the landing page) : Home
-2️⃣ Find Services → (For service seekers to browse & hire professionals) : Products
-3️⃣ Offer Services → (For professionals to list their skills/services)
-4️⃣ Categories → (Organized service listings based on type: Tech, Home, Business, etc.) : categories
-5️⃣ How It Works → (Explains the process for both clients & service providers)
-6️⃣ Support → (FAQs, Help Center, or Contact options for assistance)x
+understand the slug : /product/[slug]/
+understand the slug : /categories/[slug]/

@@ -10,7 +10,7 @@ export default function Home() {
     <main className="flex-1">
       <HeroSection />
       <div className="container px-4 md:px-6 py-8">
-        <CategoryList />
+        <CategoryList limit={2} />
         <section className="py-12">
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-3xl font-bold tracking-tight">Featured Products</h2>

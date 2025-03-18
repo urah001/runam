@@ -42,14 +42,19 @@ const categories = [
   },
 ];
 
-export function CategoryList() {
+export function CategoryList({ limit = 3 }: { limit: number }) {
   return (
     <section className="py-12">
-      <h2 className="text-3xl font-bold tracking-tight mb-8">
-        Shop by Category
-      </h2>
+      <div className="flex items-center justify-between mb-4">
+        <h2 className="text-3xl font-bold tracking-tight mb-8">
+          Shop by Category
+        </h2>
+        <Link href="/categories" className="text-primary hover:underline">
+          View all
+        </Link>
+      </div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-        {categories.map((category) => (
+        {categories.slice(0, limit).map((category) => (
           <Link key={category.id} href={`/categories/${category.slug}`}>
             <Card className="overflow-hidden transition-all hover:shadow-lg">
               <CardContent className="p-0">
