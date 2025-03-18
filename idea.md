@@ -9,8 +9,11 @@ dark    |  little dark |    bright   | little bright
 60 30 10 
 
 # to do 
-remove category to remain only available product 
-leave category
+add pic
+add a mock up profile page 
+remove the cart icon 
+find like a booked icon
+
 
 1. ### **Service Rendering Jobs in Nigeria 🇳🇬**  
  **1. Home & Domestic Services 🏡**  
@@ -99,7 +102,7 @@ leave category
    - Bouncers & Event Security  
    - Locksmith Services  
 
-Where to Download Crop Images? 📸
+# Where to Download Crop Images? 📸
 
     Unsplash (Free HD images) – https://unsplash.com/s/photos/farm-crops
     Pexels (Free images) – https://www.pexels.com/search/crops/

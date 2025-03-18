@@ -1,9 +1,9 @@
 "use client";
 import { Suspense } from "react";
-import ProductGrid from "@/components/ui/product-grid";
 import { Button } from "@/components/ui/button";
+import { CategoryList } from "@/components/ui/category-list";
 
-export default function CategorysPage() {
+export default function CategoryPage() {
   return (
     <main className="flex-1">
       <div className="container px-4 md:px-6 py-8">
@@ -11,7 +11,7 @@ export default function CategorysPage() {
           <div>
             <h1 className="text-3xl font-bold tracking-tight">All Service Categories</h1>
             <p className="text-muted-foreground">
-              Browse our collection of high-quality products
+              Browse our collection of high-skilled service renderers
             </p>
           </div>
           <div className="flex items-center gap-4">
@@ -29,7 +29,7 @@ export default function CategorysPage() {
             <div className="text-center py-12">Loading products...</div>
           }
         >
-          <ProductGrid />
+          <CategoryList limit={10} />
         </Suspense>
       </div>
     </main>

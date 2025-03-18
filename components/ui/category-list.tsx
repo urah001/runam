@@ -7,25 +7,25 @@ const categories = [
   {
     id: 1,
     name: "Home & Domestics",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/homeServ.jpg?height=200&width=200",
     slug: "electronics",
   },
   {
     id: 2,
     name: "Beauty & Personal care",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/beauty.svg?height=200&width=200",
     slug: "clothing",
   },
   {
     id: 3,
     name: "Event & Entertainment",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/eventServ.svg?height=200&width=200",
     slug: "home-kitchen",
   },
   {
     id: 4,
     name: "Transport & Logistics",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/transportServ.svg?height=200&width=200",
     slug: "beauty",
   },
   {
@@ -46,12 +46,12 @@ export function CategoryList({ limit = 3 }: { limit: number }) {
   return (
     <section className="py-12">
       <div className="flex items-center justify-between mb-4">
-        <h2 className="text-3xl font-bold tracking-tight mb-8">
+        {/* <h2 className="text-3xl font-bold tracking-tight mb-8">
           Shop by Category
-        </h2>
-        <Link href="/categories" className="text-primary hover:underline">
+        </h2> */}
+        {/* <Link href="/categories" className="text-primary hover:underline">
           View all
-        </Link>
+        </Link> */}
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
         {categories.slice(0, limit).map((category) => (

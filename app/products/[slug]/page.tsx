@@ -31,7 +31,7 @@ const allProducts = [
   },
 ];
 
-export default function ProductPage() {
+export default function ProductSlug() {
   const { slug } = useParams(); // ✅ Use useParams() instead of destructuring props
   const [quantity, setQuantity] = useState(1);
   const { addItem } = useCart();

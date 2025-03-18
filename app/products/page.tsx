@@ -3,7 +3,7 @@ import { Suspense } from "react";
 import ProductGrid from "@/components/ui/product-grid";
 import { Button } from "@/components/ui/button";
 
-export default function ProductsPage() {
+export default function ProductPage() {
   return (
     <main className="flex-1">
       <div className="container px-4 md:px-6 py-8">
