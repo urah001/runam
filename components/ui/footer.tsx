@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container px-4 md:px-6 py-8 md:py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-lg font-semibold mb-4">FarmerHome</h3>
+            <h3 className="text-lg font-semibold mb-4">RunAm</h3>
             <p className="text-sm text-muted-foreground">
               Your one-stop shop for quality products at affordable prices.
             </p>

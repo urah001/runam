@@ -2,41 +2,19 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { useParams } from "next/navigation"; // ✅ Import useParams
+import { useParams } from "next/navigation";
 import { ChevronLeft, Minus, Plus, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useCart } from "@/components/ui/cart-provider";
 import Image from "next/image";
-
-const allProducts = [
-  {
-    id: 1,
-    name: "Wireless Headphones",
-    price: 99.99,
-    image: "/placeholder.svg?height=600&width=600",
-    category: "electronics",
-    slug: "wireless-headphones",
-    description: "High-quality wireless headphones with noise cancellation.",
-    features: ["Active Noise Cancellation", "40-hour battery life"],
-  },
-  {
-    id: 2,
-    name: "Smart Watch",
-    price: 199.99,
-    image: "/placeholder.svg?height=600&width=600",
-    category: "electronics",
-    slug: "smart-watch",
-    description: "A smartwatch that tracks your fitness & notifications.",
-    features: ["Heart rate monitoring", "GPS tracking"],
-  },
-];
+import { allProducts } from "@/app/data/product"; // ✅ Import products
 
 export default function ProductSlug() {
-  const { slug } = useParams(); // ✅ Use useParams() instead of destructuring props
+  const { slug } = useParams();
   const [quantity, setQuantity] = useState(1);
   const { addItem } = useCart();
 
-  const product = allProducts.find((p) => p.slug === slug); // ✅ Now works properly
+  const product = allProducts.find((p) => p.slug === slug);
 
   if (!product) {
     return (
@@ -46,7 +24,7 @@ export default function ProductSlug() {
           Sorry, the product youre looking for doesnt exist.
         </p>
         <Button asChild>
-          <Link href="/products">Back to Products</Link>
+          <Link href={`/products/${product}`}>Back to Products</Link>
         </Button>
       </div>
     );
@@ -56,7 +34,7 @@ export default function ProductSlug() {
     <main className="flex-1">
       <div className="container px-4 md:px-6 py-8">
         <Button variant="ghost" asChild className="mb-6">
-          <Link href="/Home">
+          <Link href="/categories/Home">
             <ChevronLeft className="h-4 w-4" />
             Back to Services
           </Link>
@@ -67,15 +45,15 @@ export default function ProductSlug() {
             <Image
               src={product.image}
               alt={product.name}
-              layout="fill" /* Stretches image to fit the parent */
-              objectFit="cover" /* Ensures the image covers the area */
+              layout="fill"
+              objectFit="cover"
               className="rounded-lg"
             />
           </div>
           <div className="space-y-6">
             <h1 className="text-3xl font-bold">{product.name}</h1>
             <p className="text-2xl font-bold mt-2">
-              ${product.price.toFixed(2)}
+            ₦{product.price.toFixed(2)}
             </p>
             <p>{product.description}</p>
             <div>

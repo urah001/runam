@@ -8,13 +8,13 @@ const categories = [
     id: 1,
     name: "Home & Domestics",
     image: "/homeServ.jpg?height=200&width=200",
-    slug: "electronics",
+    slug: "Home",
   },
   {
     id: 2,
     name: "Beauty & Personal care",
     image: "/beauty.svg?height=200&width=200",
-    slug: "clothing",
+    slug: "Beauty",
   },
   {
     id: 3,

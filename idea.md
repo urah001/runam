@@ -131,3 +131,8 @@ http://localhost:1337/api/posts?populate=*
 
 understand the slug : /product/[slug]/
 understand the slug : /categories/[slug]/
+
+
+add the categories of all the item in the category/[slug]
+
+change the category in the app/category/[slug]/: {this is where the slug for each category is generated from} to the slug name of the category slug object in component/ui/category-list

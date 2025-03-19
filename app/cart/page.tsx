@@ -64,7 +64,7 @@ export default function CartPage() {
                             <div>
                               <h3 className="font-medium">{item.name}</h3>
                               <p className="text-sm text-muted-foreground">
-                                ${item.price.toFixed(2)}
+                              ₦{item.price.toFixed(2)}
                               </p>
                             </div>
                           </div>
@@ -97,10 +97,10 @@ export default function CartPage() {
                           </div>
                         </td>
                         <td className="p-4 text-right">
-                          ${item.price.toFixed(2)}
+                        ₦{item.price.toFixed(2)}
                         </td>
                         <td className="p-4 text-right font-medium">
-                          ${(item.price * item.quantity).toFixed(2)}
+                        ₦{(item.price * item.quantity).toFixed(2)}
                         </td>
                         <td className="p-4 text-right">
                           <Button
@@ -126,7 +126,7 @@ export default function CartPage() {
               <div className="space-y-4">
                 <div className="flex justify-between">
                   <span>Subtotal</span>
-                  <span>${totalPrice.toFixed(2)}</span>
+                  <span>₦{totalPrice.toFixed(2)}</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Shipping</span>
@@ -138,7 +138,7 @@ export default function CartPage() {
                 </div>
                 <div className="border-t pt-4 flex justify-between font-bold">
                   <span>Total</span>
-                  <span>${totalPrice.toFixed(2)}</span>
+                  <span>₦{totalPrice.toFixed(2)}</span>
                 </div>
               </div>
 
