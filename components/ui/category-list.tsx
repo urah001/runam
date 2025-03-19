@@ -32,13 +32,19 @@ const categories = [
     id: 5,
     name: "Digital & Tech ",
     image: "/techServ.svg?height=200&width=200",
-    slug: "digital-tect",
+    slug: "digital-tech",
   },
   {
     id: 6,
     name: "Education & Training ",
     image: "/eductionServ.svg?height=200&width=200",
     slug: "training-ed",
+  },
+  {
+    id: 7,
+    name: "Repairs & maintainance ",
+    image: "/eductionServ.svg?height=200&width=200",
+    slug: "repairs",
   },
 ];
 
