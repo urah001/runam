@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">RunAm</h3>
             <p className="text-sm text-muted-foreground">
-              Your one-stop shop for quality products at affordable prices.
+              Your one-stop shop for quality service at affordable prices.
             </p>
             <div className="flex gap-4 mt-4">
               <Link href="#" className="text-muted-foreground hover:text-primary">

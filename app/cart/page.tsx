@@ -144,7 +144,8 @@ export default function CartPage() {
               </div>
 
               <Button size="lg" className="w-full">
-                Proceed to Checkout
+                {/* Proceed to Checkout */}
+                Proceed to Connect
               </Button>
               {/* remove  below*/}
               {/* <div className="text-center text-sm text-muted-foreground">
