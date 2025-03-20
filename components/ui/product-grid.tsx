@@ -4,10 +4,11 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { useCart } from "./cart-provider";
 import Image from "next/image";
+import { allProducts } from "@/app/data/product";
 
 // Mock data for products
 //might later use mock data incase of future error 
-const allProducts = [
+/*const allProducts = [
   {
     id: 1,
     name: "Wireless Headphones",
@@ -88,7 +89,7 @@ const allProducts = [
     new: false,
     slug: "face-serum",
   },
-]
+]*/
 
 interface Product {
     id: number
@@ -151,11 +152,11 @@ function ProductCard({ product }: {product : Product}) {
         <Link href={`/products/${product.slug}`} className="hover:underline">
           <h3 className="font-medium text-lg mb-2">{product.name}</h3>
         </Link>
-        <p className="font-bold">₦{product.price.toFixed(2)}</p>
+        <p className="font-bold">{product.price.toFixed(2)}</p>
       </CardContent>
       <CardFooter className="p-4 pt-0">
         <Button className="w-full" onClick={() => addItem({ ...product, quantity: 1 })}>
-          Add to Cart
+          order service
         </Button>
       </CardFooter>
     </Card>

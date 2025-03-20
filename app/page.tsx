@@ -24,7 +24,7 @@ export default function Home() {
         <section className="py-12">
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-3xl font-bold tracking-tight">
-              Featured Products
+              Featured Workers
             </h2>
             <Link href="/products" className="text-primary hover:underline">
               View all
@@ -34,7 +34,7 @@ export default function Home() {
         </section>
         <section className="py-12">
           <div className="flex items-center justify-between mb-8">
-            <h2 className="text-3xl font-bold tracking-tight">New Arrivals</h2>
+            <h2 className="text-3xl font-bold tracking-tight">New Workers</h2>
             <Link href="/products" className="text-primary hover:underline">
               View all
             </Link>

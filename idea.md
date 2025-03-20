@@ -129,3 +129,7 @@ change the category in the app/category/[slug]/: {this is where the slug for eac
 
 
 Home Beauty ,home-kitchen, logistics-transport, digital-tech, training-ed, repairs
+
+# todo
+authentication
+responsiveness

@@ -13,11 +13,11 @@ export default function CartPage() {
     return (
       <main className="flex-1">
         <div className="container px-4 md:px-6 py-8">
-          <h1 className="text-3xl font-bold mb-6">Your Cart</h1>
+          <h1 className="text-3xl font-bold mb-6">Your Order</h1>
           <div className="border rounded-lg p-8 text-center">
             <h2 className="text-2xl font-medium mb-4">Your cart is empty</h2>
             <p className="text-muted-foreground mb-6">
-              Looks like you havent added anything to your cart yet.
+              Looks like you havent ordered anyonex yet.
             </p>
             <Button asChild>
               <Link href="/products">Continue Shopping</Link>
@@ -31,7 +31,7 @@ export default function CartPage() {
   return (
     <main className="flex-1">
       <div className="container px-4 md:px-6 py-8">
-        <h1 className="text-3xl font-bold mb-6">Your Cart</h1>
+        <h1 className="text-3xl font-bold mb-6">Your Order</h1>
 
         <div className="grid lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2">
@@ -40,8 +40,9 @@ export default function CartPage() {
                 <table className="w-full">
                   <thead className="bg-muted/50">
                     <tr>
-                      <th className="text-left p-4">Product</th>
-                      <th className="text-center p-4">Quantity</th>
+                      {/* <th className="text-left p-4">Product</th> */}
+                      <th className="text-left p-4">Worker</th>
+                      <th className="text-center p-4">Hours</th>
                       <th className="text-right p-4">Price</th>
                       <th className="text-right p-4">Total</th>
                       <th className="p-4"></th>
@@ -64,7 +65,7 @@ export default function CartPage() {
                             <div>
                               <h3 className="font-medium">{item.name}</h3>
                               <p className="text-sm text-muted-foreground">
-                              ₦{item.price.toFixed(2)}
+                                ₦{item.price.toFixed(2)}
                               </p>
                             </div>
                           </div>
@@ -97,10 +98,10 @@ export default function CartPage() {
                           </div>
                         </td>
                         <td className="p-4 text-right">
-                        ₦{item.price.toFixed(2)}
+                          ₦{item.price.toFixed(2)}
                         </td>
                         <td className="p-4 text-right font-medium">
-                        ₦{(item.price * item.quantity).toFixed(2)}
+                          ₦{(item.price * item.quantity).toFixed(2)}
                         </td>
                         <td className="p-4 text-right">
                           <Button
@@ -145,13 +146,13 @@ export default function CartPage() {
               <Button size="lg" className="w-full">
                 Proceed to Checkout
               </Button>
-
-              <div className="text-center text-sm text-muted-foreground">
+              {/* remove  below*/}
+              {/* <div className="text-center text-sm text-muted-foreground">
                 <p>or</p>
                 <Link href="/products" className="underline">
                   Continue Shopping
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

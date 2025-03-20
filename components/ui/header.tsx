@@ -19,7 +19,7 @@ export default function Header() {
     { href: "/products", label: "Find Services" },
     { href: "/categories", label: "Service Categories" },
     { href: "/about", label: "About" },
-    { href: "/contact", label: "Contact" },
+    // { href: "/contact", label: "Contact" },
   ];
 
   return (

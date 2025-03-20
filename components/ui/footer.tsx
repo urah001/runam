@@ -41,7 +41,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/new-arrivals" className="text-muted-foreground hover:text-primary">
-                  New Arrivals
+                  New Workers
                 </Link>
               </li>
               <li>
