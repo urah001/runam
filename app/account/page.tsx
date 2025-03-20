@@ -13,7 +13,7 @@ export default function ProfilePage() {
     name: "John Doe",
     email: "johndoe@example.com",
     phone: "+123 456 7890",
-    bio: "Software engineer passionate about web development and cybersecurity.",
+    bio: "A student.",
     linkedin: "https://linkedin.com/in/johndoe",
     github: "https://github.com/johndoe",
     twitter: "https://twitter.com/johndoe",
